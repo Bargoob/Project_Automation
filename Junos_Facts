@@ -1,0 +1,5 @@
+#Junos Facts Playbook
+
+This is our working repository of Ansible Playbook that successfully gather facts from Juniper devices using NETCONF.
+This folder has everything you need to run Get_Facts for Juniper devices. This document does not include environment dependencies to run the playbook. 
+However, I will try to add that later to this repo for more complete setup.
