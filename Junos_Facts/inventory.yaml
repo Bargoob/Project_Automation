@@ -1,0 +1,26 @@
+---
+all:
+  children: 
+    switches: 
+      hosts: 
+        Edge-1:
+        Edge-2:
+    L3Edge: 
+      hosts: 
+        Edge-1:
+        Edge-2: 
+      vars: 
+        ansible_ssh_user: netadmin
+        ansible_ssh_pass: Junos123
+        ansible_netconf_username: netadmin
+        ansible_netconf_password: Junos123
+        ansible_network_os: junipernetworks.junos.junos
+    L2Agg:
+      hosts: 
+        EAS11: 
+        EAS12: 
+      vars: 
+        ansible_connection: network_cli
+        ansible_network_os: cisco.nxos.nxos
+        ansible_user: netadmin
+        ansible_password: Cisco123
